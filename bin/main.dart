@@ -9,6 +9,9 @@ extension StringExtension on String {
 void main(List<String> arguments) async {
   var dir = arguments[0];
   var dirPath = 'lib/ui/views/$dir';
+  if(!File('pubspec.yaml').existsSync()){
+    print('This command is only supported in a dart or flutter project root');
+  }
   await Directory(dirPath).create(recursive: true);
   var viewFile = await File('$dirPath/${dir.capitalize()}View.dart').create();
   var modelFile = await File('$dirPath/${dir.capitalize()}ViewModel.dart').create();
