@@ -27,7 +27,7 @@ void generateService(String service_name) async {
 
   await Directory(dirPath).create(recursive: true);
   var serviceFile =
-      await File('$dirPath/${service_name.capitalize()}Service.dart').create();
+  await File('$dirPath/${service_name.capitalize()}Service.dart').create();
   var serviceTemplate = readTplFile('Service');
   serviceFile.writeAsStringSync(serviceTemplate.replaceAll(
       '{{CLASS_NAME}}', '${service_name.capitalize()}'));
@@ -39,7 +39,7 @@ void generateView(String dir) async {
   await Directory(dirPath).create(recursive: true);
   var viewFile = await File('$dirPath/${dir.capitalize()}View.dart').create();
   var modelFile =
-      await File('$dirPath/${dir.capitalize()}ViewModel.dart').create();
+  await File('$dirPath/${dir.capitalize()}ViewModel.dart').create();
   var viewTemplate = readTplFile('View');
   var viewModelTemplate = readTplFile('ViewModel');
 
