@@ -5,5 +5,5 @@ String readTplFile(String fileName) {
   var tplSplit = tplPath.split('/');
   tplSplit.removeLast();
   tplPath = tplSplit.join('/');
-  return File('${tplPath}/../$fileName.tmpl').readAsStringSync();
+  return File('${tplPath}/$fileName.tmpl').readAsStringSync();
 }

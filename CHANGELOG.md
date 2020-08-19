@@ -6,3 +6,6 @@
 
 ## 1.0.3
 -  update pubspec and readme
+
+## 1.0.4
+-  fix path issue for template file
