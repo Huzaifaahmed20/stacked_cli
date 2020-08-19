@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:args/command_runner.dart';
+
 extension StringExtensions on String {
   String capitalize() {
     return '${this[0].toUpperCase()}${substring(1)}';
@@ -16,7 +18,7 @@ void main(List<String> arguments) async {
   if (type == 'view') {
     var view_name = arguments[1];
     await generateView(view_name);
-    generateRoutes(view_name);
+    await generateRoutes(view_name);
   } else if (type == 'service') {
     var service_name = arguments[1];
     generateService(service_name);

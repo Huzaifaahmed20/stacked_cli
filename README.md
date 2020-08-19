@@ -21,7 +21,7 @@ Note: This tool is only applicable to stacked / MVVM architecture project by Fil
 
 4. Add alias for quick access.
 
-       alias generate_stacked_view='dart PATH-TO-CLONED_DIR/bin/main.dart $1' 
+       alias generate_stacked_view='dart PATH-TO-CLONED_DIR/bin/main.dart view $1' 
 5. use this alias in your stacked architecture project.
 
         $ generate_stacked_view view-name-in-small-words
