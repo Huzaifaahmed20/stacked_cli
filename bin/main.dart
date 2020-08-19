@@ -16,22 +16,26 @@ void main(List<String> arguments) async {
   var type = arguments[0];
   if (type == 'view') {
     var view_name = arguments[1];
+    print('Adding ${view_name}View in your app ...');
     await generateView(view_name);
     await generateRoutes(view_name);
     await runProcess();
+    print('Successfully added ${view_name}View in your app');
   } else if (type == 'service') {
     var service_name = arguments[1];
+    print('Adding ${service_name}Service in your app ...');
     await generateService(service_name);
     await injectService(service_name);
     await runProcess();
+    print('Successfully added ${service_name}Service in your app');
   } else {
     print('Unsupported type: be sure to be one of view or service');
   }
 }
 
 void runProcess() {
-  var flutterExectutable = whichSync('flutter');
-  if (flutterExectutable.isEmpty) {
+  var flutterExecutable = whichSync('flutter');
+  if (flutterExecutable.isEmpty) {
     print('Make sure you have set your flutter environment');
     return;
   }
