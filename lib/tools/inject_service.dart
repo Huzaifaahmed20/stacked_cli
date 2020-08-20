@@ -17,7 +17,6 @@ void injectService(String serviceName) async {
   var services = [];
   for (var dirRecord in listOfServices) {
     var name = dirRecord.path.split('/').last.split('.').first;
-    print(name);
     if (name != 'Services') {
       var lazy = laxyTmpl.replaceAll('{{LAZY}}', '@lazySingleton');
 
