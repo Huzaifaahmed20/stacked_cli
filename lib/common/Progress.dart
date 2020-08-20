@@ -1,17 +1,15 @@
 import 'dart:io';
 
-import 'package:console/console.dart';
-
-class ProgressBar{
+class ProgressBar {
   bool shouldRun = false;
 
-  void start(){
+  void start() {
     shouldRun = true;
     stdout.write('\n');
     startProgress();
   }
 
-  void stop(){
+  void stop() {
     shouldRun = false;
     stdout.write('\n');
     stdout.write('\x1B[2J\x1B[0;0H');
@@ -19,12 +17,12 @@ class ProgressBar{
 
   void startProgress() async {
     print('\n\x1b[38;5;39mBUILDING CODE\x1b[0m');
-    while(true){
-      if(!shouldRun){
+    while (true) {
+      if (!shouldRun) {
         break;
       }
       for (var i = 0; i <= 100; i++) {
-        if(!shouldRun){
+        if (!shouldRun) {
           break;
         }
         drawProgressBar(i / 100.0, 20);
@@ -47,5 +45,4 @@ class ProgressBar{
           '\x1b[0m',
     );
   }
-
 }
