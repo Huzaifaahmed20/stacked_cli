@@ -12,3 +12,6 @@ dependencies:
 
 dev_dependencies:
   pedantic: ^1.8.0
+
+executables:
+  st_cli: main
