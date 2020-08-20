@@ -3,7 +3,7 @@ import '../common/string_extension.dart';
 import 'read_tmpl_file.dart';
 
 void injectService(String serviceName) async {
-  var serviceTmpl = readTplFile('ServiceInject').split('\n');
+  var serviceTmpl = readTplFile(Templates.SERVICE_INJECT).split('\n');
   var importLineTmpl = serviceTmpl[2];
   var laxyTmpl = serviceTmpl[12];
   var serviceInjTmpl = serviceTmpl[13];

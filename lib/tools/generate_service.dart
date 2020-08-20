@@ -9,7 +9,7 @@ void generateService(String service_name) async {
   await Directory(dirPath).create(recursive: true);
   var serviceFile =
       await File('$dirPath/${service_name.capitalize()}Service.dart').create();
-  var serviceTemplate = readTplFile('Service');
+  var serviceTemplate = readTplFile(Templates.SERVICE);
   serviceFile.writeAsStringSync(serviceTemplate.replaceAll(
       '{{CLASS_NAME}}', '${service_name.capitalize()}'));
 }

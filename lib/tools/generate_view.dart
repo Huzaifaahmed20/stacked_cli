@@ -9,8 +9,8 @@ void generateView(String dir) async {
   var viewFile = await File('$dirPath/${dir.capitalize()}View.dart').create();
   var modelFile =
       await File('$dirPath/${dir.capitalize()}ViewModel.dart').create();
-  var viewTemplate = readTplFile('View');
-  var viewModelTemplate = readTplFile('ViewModel');
+  var viewTemplate = readTplFile(Templates.VIEW);
+  var viewModelTemplate = readTplFile(Templates.VIEW_MODEL);
 
   viewFile.writeAsStringSync(
       viewTemplate.replaceAll('{{CLASS_NAME}}', '${dir.capitalize()}'));

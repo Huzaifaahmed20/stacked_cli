@@ -1,4 +1,4 @@
-import 'package:injectable/injectable.dart';
+const SERVICE_INJECT_TEMPLATE = """import 'package:injectable/injectable.dart';
 import 'package:stacked_services/stacked_services.dart';
 import './{{SERVICE_DIR_NAME}}.dart';
 
@@ -13,4 +13,4 @@ abstract class Services {
   {{LAZY}}
   {{SERVICE_NAME}} get {{SERVICE_VAR}};
 
-}
+}""";

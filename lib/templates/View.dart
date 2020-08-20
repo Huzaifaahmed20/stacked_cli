@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+const VIEW_TEMPLATE = """import 'package:flutter/material.dart';
 import '{{CLASS_NAME}}ViewModel.dart';
 import 'package:stacked/stacked.dart';
 
@@ -16,4 +16,4 @@ class {{CLASS_NAME}}View extends StatelessWidget {
       viewModelBuilder: () => {{CLASS_NAME}}ViewModel(),
     );
   }
-}
+}""";

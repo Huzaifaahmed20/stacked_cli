@@ -3,7 +3,7 @@ import '../common/string_extension.dart';
 import 'read_tmpl_file.dart';
 
 void generateRoutes(String dir) async {
-  var routeData = readTplFile('router').split('\n');
+  var routeData = readTplFile(Templates.ROUTER).split('\n');
   var importLineTmpl = routeData[1];
   var routeLineTmpl = routeData[5];
   routeData.removeAt(1);
