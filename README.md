@@ -13,16 +13,16 @@ Note: This tool is only applicable to stacked / MVVM architecture project by Fil
 ### **How to add view**:
    use this alias in your stacked architecture project.
 
-        $ stacked view name-in-small-words
+        $ st_cli view name-in-small-words
    For example:
 
-        $ stacked view login
+        $ st_cli view login
 
 It will generate some files and folders (if not exist) in your lib folder with some starting code.
 
 ### **How to add service**:
 
-        $ stacked service firestore
+        $ st_cli service firestore
 
 it will generate services folder and service file in it and it also injects that service in your app
 
