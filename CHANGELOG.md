@@ -1,11 +1,2 @@
-## 1.0.0
-- Initial version, created by Stagehand
-
-## 1.0.2
-- fix pubspec initial issues
-
-## 1.0.3
--  update pubspec and readme
-
-## 1.0.4
--  fix path issue for template file
+## 1.0.12
+- fix some bugs regarding validations and template files

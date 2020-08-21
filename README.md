@@ -6,7 +6,7 @@ Note: This tool is only applicable to stacked / MVVM architecture project by Fil
 
 # Get Started
 
-#### Run this command in your terninal
+#### Run this command in your terminal
     
     pub global activate stacked_cli
  
