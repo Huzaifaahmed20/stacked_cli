@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:stacked_cli/templates/Service.dart';
 import 'package:stacked_cli/templates/ServiceInject.dart';
 import 'package:stacked_cli/templates/View.dart';

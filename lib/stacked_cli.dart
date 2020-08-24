@@ -1,6 +1,4 @@
-import 'dart:async';
 import 'dart:io';
-
 import 'package:process_run/which.dart';
 import 'package:stacked_cli/common/Progress.dart';
 import 'package:stacked_cli/tools/generate_route.dart';
