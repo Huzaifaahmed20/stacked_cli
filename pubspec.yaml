@@ -1,6 +1,6 @@
 name: stacked_cli
 description: A command line tool to specially use with Flutter stacked architecture or MVVM architecture as suggested by FilledStack.
-version: 1.0.12
+version: 1.0.14
 homepage: https://github.com/Huzaifaahmed20/stacked_cli
 environment:
   sdk: '>=2.7.0 <3.0.0'

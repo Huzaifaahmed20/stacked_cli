@@ -1,2 +1,3 @@
-## 1.0.12
-- fix some bugs regarding validations and template files
+## 1.0.14
+- fix issue for running build process command in windows
+

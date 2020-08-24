@@ -8,7 +8,6 @@ import 'tools/generate_service.dart';
 import 'tools/inject_service.dart';
 
 void run_stacked_cli(List<String> arguments) async {
-  //Console.init();
   if (!File('pubspec.yaml').existsSync()) {
     print('This command is only supported in a dart or flutter project root');
     return;
@@ -44,7 +43,9 @@ void runProcess() {
     print('Make sure you have set your flutter environment');
     return;
   }
-  Process.runSync('flutter',
-      ['pub', 'run', 'build_runner', 'build', '--delete-conflicting-outputs']);
+  Process.runSync(
+    'flutter',
+    ['pub', 'run', 'build_runner', 'build', '--delete-conflicting-outputs'],
+    runInShell: true,
+  );
 }
-
