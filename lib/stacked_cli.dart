@@ -39,7 +39,7 @@ void run_stacked_cli(List<String> arguments) async {
 
 void runProcess() {
   var flutterExecutable = whichSync('flutter');
-  if (flutterExecutable.isEmpty) {
+  if (flutterExecutable == null || flutterExecutable.isEmpty) {
     print('Make sure you have set your flutter environment');
     return;
   }
