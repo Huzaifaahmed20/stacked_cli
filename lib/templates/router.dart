@@ -7,4 +7,4 @@ import '../ui/views/{{DIR_NAME}}/{{CLASS_NAME}}View.dart';
     MaterialRoute(page: {{CLASS_NAME}}View),
   ],
 )
-class \$Router {}""";
+class \$AppRouter {}""";

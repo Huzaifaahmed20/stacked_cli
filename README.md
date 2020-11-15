@@ -7,18 +7,24 @@ Note: This tool is only applicable to stacked / MVVM architecture project by Fil
 # Get Started
 
 #### Run this command in your terminal
-    
+
     pub global activate stacked_cli
- 
+
 # Usage
 
 ## **How to add view**:
-   use this alias in your stacked architecture project.
+
+use this alias in your stacked architecture project.
 
         $ st_cli view name-in-small-words
-   For example:
+
+For example:
 
         $ st_cli view login
+
+Or:
+
+        $ st_cli view userProfile
 
 It will generate some files and folders (if not exist) in your lib folder with some starting code.
 
@@ -26,5 +32,8 @@ It will generate some files and folders (if not exist) in your lib folder with s
 
         $ st_cli service firestore
 
-it will generate services folder and service file in it and it also injects that service in your app
+or:
 
+        $ st_cli service userAuth
+
+it will generate services folder and service file in it and it also injects that service in your app
